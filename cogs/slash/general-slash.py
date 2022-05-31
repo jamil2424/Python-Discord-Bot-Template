@@ -152,9 +152,10 @@ class General(commands.Cog, name="general-slash"):
         :param interaction: The application command interaction.
         """
         embed = disnake.Embed(
-            description=f"Join the support server for the bot by clicking [here](https://discord.gg/mTBrXyWxAF).",
-            color=0xD75BF4
+            description="Join the support server for the bot by clicking [here](https://discord.gg/mTBrXyWxAF).",
+            color=0xD75BF4,
         )
+
         try:
             await interaction.author.send(embed=embed)
             await interaction.send("I sent you a private message!")
