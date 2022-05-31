@@ -182,7 +182,7 @@ class Moderation(commands.Cog, name="moderation-normal"):
         :param amount: The number of messages that should be deleted.
         """
         try:
-            amount = int(amount)
+            amount = amount
         except:
             embed = disnake.Embed(
                 title="Error!",
